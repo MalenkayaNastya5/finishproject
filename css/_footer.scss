@@ -1,0 +1,108 @@
+
+
+/*********** footer ************/
+
+footer{
+    @extend %plr80;
+    padding-top: 40px;
+    padding-bottom: 41px;
+    background-color: $grey3;
+    display: flex;
+    margin-top: 112px;
+    flex-wrap: wrap;
+    
+    >div{
+        width: 25%;
+        padding: 2px;
+        @media (max-width: 767px) {
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        @media (max-width: 400px) {
+            width: 100%;
+        }
+        
+        
+    }
+    .footer_menu{
+        ul{
+            li{
+                padding-bottom: 12px;
+                a{
+                    color: $black;
+                    font-size: 16px;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+                &:first-child{
+                    padding-bottom: 20px;
+                    a{
+                        text-transform: uppercase;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    .footer_cont{
+        .phone a,.mail{
+      
+                color: $black;
+                text-decoration: none;
+                font-size: 16px;
+                &:hover{
+                    text-decoration: underline;
+                    cursor: pointer;
+                    
+                }
+        
+        }
+        .mail{
+            padding-top: 6px;
+        }
+        .soc{
+            padding-top: 13px;
+            a{
+                display: inline-block;
+                padding-right: 16px;
+                &:last-child{
+                    padding-right: 0;
+                }
+            }
+        }
+        .pril{
+            padding-top: 22px;
+            a:first-child{
+                padding-right: 23px;
+            }
+        }
+
+    }
+}
+/*********** footer ************/
+
+
+
+
+
+
+
+/*********** copyright ************/
+.copyright{
+    @extend %plr80;
+    color: $black;
+    text-align: center;
+    background-color: $grey3;
+    padding-bottom: 32px;
+    >div{
+        padding-top: 24px;
+        height: 1px;
+        border-top: solid thin $grey;
+    }
+}
+
+/*********** copyright ************/
+
+

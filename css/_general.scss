@@ -1,0 +1,71 @@
+
+
+/*********** основные ************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+$gold: #F2BF63;
+$grey: #707070;
+$grey2: #F0F0F0;
+$grey3: #EAEAEA;
+$grey4: #F5F5F5;
+$grey5: #E5E5E5;
+$black: #000;
+$black2: #313131;
+$white: #fff;
+
+
+
+
+#wrapper{
+    max-width: 1298px;  
+    margin: 0 auto;
+}
+
+
+%plr80{
+    padding-left: 80px;
+    padding-right: 80px; 
+    @media (max-width: 991px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+
+
+
+// $green: #57E050;
+// $black: #343434;
+// $white: #fff;
+
+
+
+
+//
+//
+// %link{
+// 	color: orange;
+//     text-decoration: none;
+// 	&:hover{
+// 		text-decoration: underline;
+// 		color: orange;
+// 	}	
+// }
+//
+//    
+//
+//a{
+//  @extend %link;
+//}
+//

@@ -1,0 +1,341 @@
+
+
+/*********** odin_tovar ************/
+
+.odin_tovar{
+    display: flex;
+    .left{
+        width: 450px;
+        padding-right: 81px;
+        img{
+            width: 350px;
+        }
+        .ssylki{
+            padding-top: 122px;
+            display: flex;
+            justify-content: space-between;
+            a{
+                color: $grey;
+                font-size: 18px;
+                text-decoration: none;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    
+    .right{
+        width: calc(100% - 450px);
+        h1{
+            color: $black;
+            font-size: 24px;
+            font-weight: normal;
+            text-transform: uppercase;
+        }
+        .artikul{
+            color: $grey;
+            font-size: 24px;
+            display: flex;
+            text-transform: uppercase;
+            div:first-child{
+                padding-right: 52px;
+            }
+        }
+        .price{
+            display: flex;
+            padding-top: 12px;
+            align-items: center;
+            .new_price{
+                color: $gold;
+                font-size: 32px;
+                padding-right: 40px;
+            }
+            .old_price{
+                color: $grey;
+                font-size: 24px;
+                text-decoration: line-through;
+            }
+        }
+        .rating_reviews{
+            display: flex;
+            align-items: center;
+            padding-top: 16px;
+            .rating-result{
+                padding-right: 40px;
+            }
+        }
+        .reviews{
+            font-size: 18px;
+            color: $grey;
+            
+        }
+        input[type="submit"]{
+            margin-top: 43px;
+            background: $gold;
+            color: $white;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 19px;
+            padding-bottom: 19px;
+            width: 100%;
+            border: none;
+            outline: none;
+            box-shadow: none;
+            
+        }
+        .goroda{
+            margin-top: 20px;
+            background: $grey4;
+            padding: 18px 39px 28px 29px;
+            h2{
+                font-size: 18px;
+                color: $grey;
+                
+            }
+            .spisok{
+                padding-top: 93px;
+                input{
+                    display: none;
+                    &:checked{
+                        +label{
+                         background-image: url(../img/radio1.png);    
+                        }
+                    }
+                }
+                label{
+                    background-image: url(../img/radio2.png);
+                    background-repeat: no-repeat;
+                    background-position: left center;
+                    padding-left: 30px;
+                    margin-bottom: 24px;
+                    display: flex;
+                    justify-content: space-between;
+                    color: $grey;
+                    font-size: 18px;
+                }
+            }
+        }
+        .knopki{
+            padding-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            a{
+                width: calc(50% - 22px);
+                border: solid thin $gold;
+                margin-bottom: 16px;
+                font-size: 18px;
+                color: $grey;
+                text-align: center;
+                text-decoration: none;
+                padding-top: 12px;
+                padding-bottom: 13px;
+                
+                
+            }    
+        }
+        .text{
+            padding-top: 20px;
+             color: $grey;
+              font-size: 14px;
+            p{
+                padding-bottom: 24px;
+            }
+                 
+        }
+        .pod_izb{
+            a:first-child{
+                padding-right: 32px;
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1200px) {
+  .odin_tovar{
+      
+      .left{
+          width: 300px;
+          img{
+              width: 250px;
+          }
+          .ssylki{
+              display: block;
+              a{
+                  display: block;
+                  margin-bottom: 10px;
+              }
+          }
+      }
+      .right{
+          width: calc(100% - 300px);
+      } 
+    }
+}
+
+
+
+@media (max-width: 850px) {
+    .odin_tovar{
+        display: block;
+        .left,.right{
+            width: 100%;
+        }
+        .right{
+            .spisok{
+                div{
+                    label{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .odin_tovar{
+
+        .right{
+           .goroda .spisok{
+                div{
+                    label{
+                        flex-direction: column;
+                    }
+                }
+            }
+            .knopki{
+                a{
+                    width: 100%;
+                }
+            }
+        }
+    }    
+}
+
+
+/*********** odin_tovar ************/
+
+
+
+
+
+
+
+
+
+
+
+/*********** mozhet_ponr ************/
+
+.mozhet_ponr{
+    @extend %plr80;
+    padding-top: 100px;
+    overflow: hidden;
+    h3{
+        color: $grey;
+        font-size: 24px;
+        text-transform: uppercase;
+        text-align: center;
+        span{
+            border-bottom: 1px solid $grey2;
+            padding-bottom: 8px;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .slider{
+        display: flex;
+        position: relative;
+        margin-top: 124px;
+        padding-left: 20px;
+        padding-right: 20px;
+        
+        a{
+            width: 25%;
+           text-decoration: none;
+            text-align: center;
+            border-left: 1px solid $grey2;
+            display: block;
+            padding-top: 10px;
+            padding-bottom: 15px;
+      
+            img{
+                margin: 0 auto;
+            }
+
+        }
+        
+
+        a:first-child{
+            border: none;
+        }
+        .left{
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+        .right{
+            position: absolute;
+            right: 0;
+            top: 50%;
+        }
+        h4{
+           padding-top: 37px;
+            color: $grey;
+            font-size: 18px;
+        }
+        span{
+            padding-top: 30px;
+            font-size: 18px;
+            color: $gold;
+            display: inline-block;
+        }
+        .slick-arrow{
+            
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 100% auto;
+            opacity: 1;
+            width: 22px;
+            height: 40px;
+            &:before{
+                display: none;
+            }
+            &:hover{
+                opacity: 1;
+            }
+        }
+        .slick-next {
+            background-image: url(../img/right.png);
+        }
+        .slick-prev{
+           background-image: url(../img/left.png); 
+        }
+        @media (max-width: 1024px) {
+            .slick-next {
+                transform: translate(-110%, 0);
+            }
+            .slick-prev{
+               transform: translate(110%, 0); 
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/*********** mozhet_ponr ************/
+
+
+
+
+
+
